@@ -1,7 +1,7 @@
 import json
 from transformers import AutoTokenizer, AutoConfig, AutoModelForPreTraining, \
                          AdamW, get_linear_schedule_with_warmup, \
-                         TrainingArguments, BeamScorer, Trainer
+                         TrainingArguments, BeamScorer
 
 import torch
 from torch.utils.data import Dataset, random_split, DataLoader, \

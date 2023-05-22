@@ -97,7 +97,7 @@ def main(args: DictConfig):
         num_training_steps=num_training_steps,
     )
 
-    early_stopping = EarlyStopping(ckpt_path = ckpt_path, patience=args.patience, verbose=False, delta=args.delta)
+    early_stopping = EarlyStopping(ckpt_path = ckpt_path, patience=args.patience, verbose=True, delta=args.delta)
 
     pbar = tqdm(range(num_training_steps))
     for epoch in range(args.num_epochs):
